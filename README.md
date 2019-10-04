@@ -6,3 +6,5 @@ Documentation: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -
 
 Thanks to Stefan Grage for sharing slides and exercise content.
 https://github.com/stefangrage
+
+HEJ DIANA
