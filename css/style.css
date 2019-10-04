@@ -1,0 +1,124 @@
+/* "css/style.css" - til dine custom styles*/
+
+/* Før du skriver noget CSS selv, så tjek https://getbootstrap.com/docs/4.3/getting-started/introduction/ (menuen til venstre)
+
+Der er masser af indbyggede classes for alt muligt i bootstrap, som du hellere skal tilføje i HTML-filen.
+F.eks. for typografi, spacing (margin og padding), flexboxes og positionering med meget mere */
+
+/* // Extra small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap*/
+
+/**************************************************/
+/* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
+
+body {
+	background-color: red;
+}
+
+#top,
+#bottom {
+	background: greenyellow;
+}
+
+/* tidl. kaldet 'xs-' */
+/*
+body::before {
+	content: "Default. mobile/under 576px. Deafult i Bootstrap.";
+	padding: 1rem;
+	background-color: turquoise;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0.5;
+}
+*/
+
+section {
+	margin-bottom: 30px;
+
+}
+
+
+
+.navbar-nav {
+	height: 100vh;
+}
+
+
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+@media (min-width: 576px) {
+
+	body {
+		background-color: hotpink;
+	}
+
+	/*
+    body::before {
+        content: "'sm-': lig el. over 576px.";
+    }
+*/
+
+	/* END "sm-" 576px and up */
+}
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+
+	body {
+		background-color: yellow;
+	}
+
+	/*
+    body::before {
+        content: "'md': lig el. over 768px. ";
+    }
+*/
+
+	/* END "md-" 768px and up */
+}
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+
+	body {
+		background-color: peru;
+	}
+
+	/*
+    body::before {
+        content: "'lg': lig el. over 992px.";
+    }
+*/
+
+	/* END "lg-" 992px and up */
+}
+
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+
+	body {
+		background-color: blue;
+	}
+
+	/*
+    body::before {
+    	content: "'xl': lig el. over 1200px.";
+    }
+*/
+
+	/* END "xl-" 1200px and up */
+	.navbar-nav {
+		height: auto;
+	}
+
+}
