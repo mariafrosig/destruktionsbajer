@@ -15,6 +15,9 @@ body {
 	background-color: red;
 }
 
+
+
+
 #top,
 #bottom {
 	background: greenyellow;
@@ -92,6 +95,10 @@ section {
 		background-color: peru;
 	}
 
+	.hidden {
+		display: none;
+	}
+
 	/*
     body::before {
         content: "'lg': lig el. over 992px.";
@@ -119,6 +126,10 @@ section {
 	/* END "xl-" 1200px and up */
 	.navbar-nav {
 		height: auto;
+	}
+
+	.center {
+		justify-content: center;
 	}
 
 }
