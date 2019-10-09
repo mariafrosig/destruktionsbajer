@@ -12,7 +12,7 @@ F.eks. for typografi, spacing (margin og padding), flexboxes og positionering me
 /* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
 
 body {
-	background-color: red;
+	background-color: #F5F5F2;
 }
 
 
@@ -43,12 +43,17 @@ section {
 }
 
 
-
 .navbar-nav {
 	height: 100vh;
 }
 
+.hidden-mobil {
+	display: none;
+}
 
+.bg-colour {
+	background-color: #F5F5F2;
+}
 
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
@@ -97,6 +102,16 @@ section {
 
 	.hidden {
 		display: none;
+	}
+
+	.navbar-nav.navbar-center {
+		position: absolute;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+
+	.hidden-mobil {
+		display: inherit;
 	}
 
 	/*
