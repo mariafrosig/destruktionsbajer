@@ -12,15 +12,21 @@ F.eks. for typografi, spacing (margin og padding), flexboxes og positionering me
 /* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
 
 body {
-	background-color: red;
+    background-color: red;
 }
 
 
+.hide {
+    display: none;
+}
 
+.show {
+    display: block;
+}
 
 #top,
 #bottom {
-	background: greenyellow;
+    background: greenyellow;
 }
 
 /* tidl. kaldet 'xs-' */
@@ -38,14 +44,14 @@ body::before {
 */
 
 section {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 
 }
 
 
 
 .navbar-nav {
-	height: 100vh;
+    height: 100vh;
 }
 
 
@@ -55,17 +61,17 @@ section {
 /**************************************************/
 @media (min-width: 576px) {
 
-	body {
-		background-color: hotpink;
-	}
+    body {
+        background-color: hotpink;
+    }
 
-	/*
+    /*
     body::before {
         content: "'sm-': lig el. over 576px.";
     }
 */
 
-	/* END "sm-" 576px and up */
+    /* END "sm-" 576px and up */
 }
 
 /**************************************************/
@@ -73,17 +79,17 @@ section {
 /**************************************************/
 @media (min-width: 768px) {
 
-	body {
-		background-color: yellow;
-	}
+    body {
+        background-color: yellow;
+    }
 
-	/*
+    /*
     body::before {
         content: "'md': lig el. over 768px. ";
     }
 */
 
-	/* END "md-" 768px and up */
+    /* END "md-" 768px and up */
 }
 
 /**************************************************/
@@ -91,21 +97,21 @@ section {
 /**************************************************/
 @media (min-width: 992px) {
 
-	body {
-		background-color: peru;
-	}
+    body {
+        background-color: peru;
+    }
 
-	.hidden {
-		display: none;
-	}
+    .hidden {
+        display: none;
+    }
 
-	/*
+    /*
     body::before {
         content: "'lg': lig el. over 992px.";
     }
 */
 
-	/* END "lg-" 992px and up */
+    /* END "lg-" 992px and up */
 }
 
 /**************************************************/
@@ -113,23 +119,23 @@ section {
 /**************************************************/
 @media (min-width: 1200px) {
 
-	body {
-		background-color: blue;
-	}
+    body {
+        background-color: blue;
+    }
 
-	/*
+    /*
     body::before {
     	content: "'xl': lig el. over 1200px.";
     }
 */
 
-	/* END "xl-" 1200px and up */
-	.navbar-nav {
-		height: auto;
-	}
+    /* END "xl-" 1200px and up */
+    .navbar-nav {
+        height: auto;
+    }
 
-	.center {
-		justify-content: center;
-	}
+    .center {
+        justify-content: center;
+    }
 
 }

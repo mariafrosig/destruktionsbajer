@@ -46,54 +46,156 @@
     <!-- Header - set the background image for the header in the line below -->
 
 
+    <!--
+	<section id="title" class="row justify-content-center">
+		<img src="imgs/test.png" alt="" class="img-responsive col-xl-6 pt-5">
+
+	</section>
+
+	<section id="indhold" class="row">
+		<img src="imgs/hand.png" alt="" class="img-responsive col-xl-12 m-0 p-0">
+	</section>
+-->
+
     <main class="container">
 
 
-        <div id="start">Start Quiz!</div>
+        <div id="start" class="show">
 
-        <div id="quiz" style="display: none">
+            <h1>Destruktionstesten</h1>
 
-            <div id="question"></div>
-
-            <div id="qImg"></div>
-
-            <div id="choices">
-
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-
-            </div>
-
-            <div id="timer">
-
-                <div id="counter"></div>
-
-                <div id="btimeGauge"></div>
-
-                <div id="timeGauge"></div>
-
-            </div>
-
-            <div id="progress"></div>
+            <button id="button_start">START</button>
 
         </div>
 
-        <div id="scoreContainer" style="display: none"></div>
+        <div id="quiz">
+
+            <div id="question1" class="hide">
+
+                <h3>Ville du? 1</h3>
+                <div id="choices">
+
+                    <button class="choice" id="YES1">JA</button>
+
+                    <button class="choice" id="NO1">NEJ</button>
+
+
+
+                </div>
+
+            </div>
+
+            <div id="question2" class="hide">
+
+
+                <h3>Ville du? 2</h3>
+
+                <div id="choices">
+
+                    <button class="choice" id="YES2">JA</button>
+
+                    <button class="choice" id="NO2">NEJ</button>
+                </div>
+
+            </div>
+
+            <div id="question3" class="hide">
+
+                <h3>Ville du? 3</h3>
+
+                <div id="choices">
+
+                    <button class="choice" id="YES3">JA</button>
+
+                    <button class="choice" id="NO3">NEJ</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div id="result" class="hide">
+
+            <img src="imgs/Destruktionsbajer.png" alt="procent">
+
+            <button id="again">PRØV IGEN</button>
+
+        </div>
 
 
         <script src="quiz.js"></script>
 
+        <!--
+    
+		<section id="questions" class="row">
+
+			<ul class="list-group col-xl-12 row">
+				<div class="col-xl-6">
+					<li class="list-group-item">Porta ac consectetur ac</li>
+					<div class="btn-group btn-group-toggle col-xl-12 p-5" data-toggle="buttons">
+						<label class="btn btn-secondary active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked> Ja
+						</label>
+						<img src="imgs/logo-top.png" alt="" class="img-responsive col-xl-1 m-1 p-1">
+						<label class="btn btn-secondary">
+							<input type="radio" name="options" id="option2" autocomplete="off"> Nej
+						</label>
+					</div>
+				</div>
 
 
+				<div class="col-xl-6">
+					<li class="list-group-item">Porta ac consectetur ac</li>
+					<div class="btn-group btn-group-toggle col-xl-12 p-5" data-toggle="buttons">
+						<label class="btn btn-secondary active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked> Ja
+						</label>
+						<img src="imgs/logo-top.png" alt="" class="img-responsive col-xl-1 m-1 p-1">
+						<label class="btn btn-secondary">
+							<input type="radio" name="options" id="option2" autocomplete="off"> Nej
+						</label>
+					</div>
+				</div>
+
+				<div class="col-xl-6">
+					<li class="list-group-item">Vestibulum at eros</li>
+					<div class="btn-group btn-group-toggle col-xl-12 p-5" data-toggle="buttons">
+						<label class="btn btn-secondary active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked> Ja
+						</label>
+						<img src="imgs/logo-top.png" alt="" class="img-responsive col-xl-1 m-1 p-1">
+						<label class="btn btn-secondary">
+							<input type="radio" name="options" id="option2" autocomplete="off"> Nej
+						</label>
+					</div>
+				</div>
+
+				<div class="col-xl-6">
+					<li class="list-group-item">Vestibulum at eros</li>
+					<div class="btn-group btn-group-toggle col-xl-12 p-5" data-toggle="buttons">
+						<label class="btn btn-secondary active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked> Ja
+						</label>
+						<img src="imgs/logo-top.png" alt="" class="img-responsive col-xl-1 m-1 p-1">
+						<label class="btn btn-secondary">
+							<input type="radio" name="options" id="option2" autocomplete="off"> Nej
+						</label>
+					</div>
+				</div>
+			</ul>
+
+		</section>
+-->
     </main>
-    <footer class="footer mt-auto py-3 row bg-light">
-        <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-    </footer>
+    <!--
+	<footer class="footer mt-auto py-3 row bg-light">
+		<div class="container">
+			<span class="text-muted">Place sticky footer content here.</span>
+		</div>
+	</footer>
+-->
 
 
 
