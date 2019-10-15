@@ -2,72 +2,85 @@ window.addEventListener("load", showQuiz);
 
 
 function showQuiz() {
-    console.log("siden vises!");
-    document.querySelector("#button_start").addEventListener("click", startQuiz);
+	console.log("siden vises!");
+	document.querySelector("#button_start").addEventListener("click", startQuiz);
 
 
 }
 
 function startQuiz() {
-    console.log("quiz starter");
+	console.log("quiz starter");
 
-    document.querySelector("#button_start").classList.add("hide");
+	document.querySelector("#button_start").classList.add("hide");
 
-    document.querySelector("#question1").classList.remove("hide");
+	document.querySelector("#question1").classList.remove("hide");
 
 
 
-    document.querySelector("#YES1").addEventListener("click", question2);
-    document.querySelector("#NO1").addEventListener("click", question2);
+	document.querySelector("#YES1").addEventListener("click", question2);
+	document.querySelector("#NO1").addEventListener("click", question2);
 
 
 }
 
 
 function question2() {
-    console.log("question2");
+	console.log("question2");
 
-    document.querySelector("#question1").classList.add("hide");
-    document.querySelector("#question2").classList.remove("hide");
+	document.querySelector("#question1").classList.add("hide");
+	document.querySelector("#question2").classList.remove("hide");
 
 
-  document.querySelector("#YES2").addEventListener("click", question3);
-    document.querySelector("#NO2").addEventListener("click", question3);
+	document.querySelector("#YES2").addEventListener("click", question3);
+	document.querySelector("#NO2").addEventListener("click", question3);
 
 }
 
 
 function question3() {
-    console.log("question3");
+	console.log("question3");
 
-    document.querySelector("#question2").classList.add("hide");
-    document.querySelector("#question3").classList.remove("hide");
+	document.querySelector("#question2").classList.add("hide");
+	document.querySelector("#question3").classList.remove("hide");
 
 
-     document.querySelector("#YES3").addEventListener("click", result);
-    document.querySelector("#NO3").addEventListener("click", result);
+	document.querySelector("#YES3").addEventListener("click", question4);
+	document.querySelector("#NO3").addEventListener("click", question4);
+
+
+}
+
+function question4() {
+	console.log("question4");
+
+	document.querySelector("#question3").classList.add("hide");
+	document.querySelector("#question4").classList.remove("hide");
+
+
+	document.querySelector("#YES4").addEventListener("click", result);
+	document.querySelector("#NO4").addEventListener("click", result);
 
 
 }
 
 
 function result() {
-    console.log("resultat");
+	console.log("resultat");
 
-    document.querySelector("#question3").classList.add("hide");
-    document.querySelector("#result").classList.remove("hide");
+	document.querySelector("#question4").classList.add("hide");
+	document.querySelector("#result").classList.remove("hide");
 
 
-    document.querySelector("#again").addEventListener("click", restart);
+	document.querySelector("#again").addEventListener("click", restart);
 
 
 }
 
 function restart() {
 
-       document.querySelector("#result").classList.add("hide");
+	document.querySelector("#result").classList.add("hide");
 
-    startQuiz();
+	startQuiz();
 
 }
 

@@ -10,39 +10,60 @@
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 	<link rel="stylesheet" href="bs/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 
+
 	<!-- Navigation -->
 	<section id="splash" class="row">
-		<nav class="navbar navbar-expand-xl navbar-dark bg-colour fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-colour fixed-top shadow-sm p-2 mb-4 rounded slideanim">
 			<div class="container col-12">
-				<a href="index.html">
+				<a href="index.html" class="">
 					<img alt="" src="imgs/logo.png" class="menu-logo hidden m-3" style="height: 4em;"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon "></span>
+				<button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="animated-icon3"><span></span><span></span><span></span></div>
 				</button>
+
+
 				<div class="collapse navbar-collapse m-lg-5" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto navbar-center">
+					<ul class="navbar-nav ml-auto navbar-center text-center">
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="destruktionsgrundlag.html">Destruktionsverden
+							<a class="nav-link text-body mx-5 burger-menu-margin" href="destruktionsgrundlag.html">Destruktionsverden
 							</a>
 						</li>
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="events.html">Events</a>
+							<a class="nav-link text-body mx-5 burger-menu-margin1" href="events.html">Events</a>
 						</li>
 						<li class="nav-item active hidden-mobil">
 							<a href="index.html"><img alt="" src="imgs/logo.png" class="menu-logo" style="height: 5em;"></a>
 						</li>
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="#">Smaddermad</a>
+							<a class="nav-link text-body mx-5 burger-menu-margin1" href="#">Smaddermad</a>
 						</li>
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="destruktionstesten.html">Destruktionstesten</a>
+							<a class="nav-link text-body mx-5 burger-menu-margin1" href="destruktionstesten.html">Destruktionstesten</a>
 						</li>
+
+						<div class="hidden">
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-youtube"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+
 					</ul>
+
+
+				</div>
+
+				<div class="hidden-mobil">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
 				</div>
 			</div>
 		</nav>
@@ -51,8 +72,8 @@
 
 	<main class="container">
 		<section id="info" class="row pt-5">
-			<div class="col-xl-8 mt-5 m-4">
-				<div class="text-light">
+			<div class="col-xl-8 mt-5 m-4 pt-5 margin-top-10 slideanim">
+				<div class="">
 					<h1>Events</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe debitis vero mollitia praesentium eaque illo quod aliquam nobis maxime sint exercitationem totam ut illum, non tempore maiores ducimus explicabo Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
@@ -61,22 +82,22 @@
 
 			<section id="events" class="row justify-content-center">
 
-				<img src="imgs/events.png" alt="" class="img-responsive col-xl-5">
+				<img src="imgs/events.png" alt="" class="slideanim img-responsive col-xl-5">
 
-				<div class="text-light col-xl-6 mt-5 m-4">
+				<div class=" col-xl-6 mt-5 m-4 slideanim">
 					<h1>Valentines dag</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe debitis vero mollitia praesentium eaque illo quod aliquam nobis maxime sint exercitationem totam ut illum.</p>
 				</div>
 
-				<div class="text-light col-xl-6 mt-5 m-4">
+				<div class=" col-xl-6 mt-5 m-4 slideanim">
 					<h1>Brætspil</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe debitis vero mollitia praesentium eaque illo quod aliquam nobis maxime sint exercitationem totam ut illum.</p>
 				</div>
-				<img src="imgs/events.png" alt="" class="img-responsive col-xl-6">
+				<img src="imgs/events.png" alt="" class="img-responsive col-xl-5 slideanim">
 
-				<img src="imgs/events.png" alt="" class="img-responsive col-xl-6">
+				<img src="imgs/events.png" alt="" class="img-responsive col-xl-5 slideanim">
 
-				<div class="text-light col-xl-6 mt-5 m-4">
+				<div class="col-xl-6 mt-5 m-4 slideanim">
 					<h1>Julefrokost</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe debitis vero mollitia praesentium eaque illo quod aliquam nobis maxime sint exercitationem totam ut illum.</p>
 				</div>
@@ -99,6 +120,7 @@
 	<!-- Ikke mere indhold efter denne linie -->
 
 	<!-- jQuery og popper.js inkludes herunder - nødvendigt for Bootstrap  - slet dem ikke-->
+	<script src="float-panel.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

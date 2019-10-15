@@ -10,6 +10,8 @@
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 	<link rel="stylesheet" href="bs/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -18,42 +20,60 @@
 
 	<!-- Navigation -->
 	<section id="splash" class="row">
-		<nav class="navbar navbar-expand-xl navbar-dark bg-colour fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-colour fixed-top shadow-sm p-2 mb-4 rounded slideanim">
 			<div class="container col-12">
-				<a href="index.html">
+				<a href="index.html" class="">
 					<img alt="" src="imgs/logo.png" class="menu-logo hidden m-3" style="height: 4em;"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon "></span>
+				<button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="animated-icon3"><span></span><span></span><span></span></div>
 				</button>
+
+
 				<div class="collapse navbar-collapse m-lg-5" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto navbar-center">
+					<ul class="navbar-nav ml-auto navbar-center text-center">
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="destruktionsgrundlag.html">Destruktionsverden
+							<a class="nav-link text-body mx-5 burger-menu-margin" href="destruktionsgrundlag.html">Destruktionsverden
 							</a>
 						</li>
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="events.html">Events</a>
+							<a class="nav-link text-body mx-5 burger-menu-margin1" href="events.html">Events</a>
 						</li>
 						<li class="nav-item active hidden-mobil">
 							<a href="index.html"><img alt="" src="imgs/logo.png" class="menu-logo" style="height: 5em;"></a>
 						</li>
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="#">Smaddermad</a>
+							<a class="nav-link text-body mx-5 burger-menu-margin1" href="#">Smaddermad</a>
 						</li>
 						<li class="nav-item mt-lg-3">
-							<a class="nav-link text-dark mx-5" href="destruktionstesten.html">Destruktionstesten</a>
+							<a class="nav-link text-body mx-5 burger-menu-margin1" href="destruktionstesten.html">Destruktionstesten</a>
 						</li>
+
+						<div class="hidden">
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-youtube"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+
 					</ul>
+
+
+				</div>
+
+				<div class="hidden-mobil">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
 				</div>
 			</div>
 		</nav>
 	</section>
 	<!-- Header - set the background image for the header in the line below -->
-
 	<section id="info" class="row justify-content-center">
 
-		<div class="col-xl-8">
-			<div class="text-light pt-5 mt-5 mx-4 text-center">
+		<div class="col-xl-8 pt-5">
+			<div class="text-body pt-5 mt-5 mx-4 text-center slideanim">
 				<h1>Destruktionsgrundlag</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe debitis vero mollitia praesentium eaque illo quod aliquam nobis maxime sint exercitationem totam ut illum, non tempore maiores ducimus explicabo Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> <br>Sunt cum vel consequatur iusto laudantium illo quis ipsum, unde, ad doloremque reiciendis illum sequi facere perspiciatis quas? Ad aut veniam laudantium.</p>
 				<button type="button" class="btn btn-outline-light">Tilmeld</button>
@@ -66,15 +86,7 @@
 
 
 	<section id="ig-post" class="row">
-		<img class="img-fluid col-12 col-md-6 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
-		<img class="img-fluid col-12 col-xl-4 mb-4" src="imgs/instagram.png" alt="">
+		<div id="instagram-feed-demo" class="instagram_feed slideanim"></div>
 	</section>
 
 
@@ -91,10 +103,27 @@
 
 	<!-- jQuery og popper.js inkludes herunder - nødvendigt for Bootstrap  - slet dem ikke-->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="float-panel.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="jquery.instagramFeed.js"></script>
+	<script>
+		$(window).on('load', function() {
+			$.instagramFeed({
+				'username': 'toolbeer',
+				'container': "#instagram-feed-demo",
+				'display_profile': false,
+				'display_biography': false,
+				'display_igtv': false,
+				'items': 9,
+				'items_per_row': 3,
+				'margin': 0,
+				'display_gallery': true
+			});
+		});
+	</script>
 	<script src="bs/js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
+
 </body>
 
 </html>
